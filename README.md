@@ -5,7 +5,7 @@
 <p>O repositório do backend-end pode ser encontrado em: https://github.com/IgorPetersson/clarke_challenge_backend</p>
 <h2>Como instalar e rodar?</h2>
 <p>Para instalar o sistema, é necessário seguir alguns passos, como baixar o projeto e fazer instalação das dependências. Para isso, é necessário abrir uma aba do terminal e fazer o seguinte: <p>
-<p>É preciso clonar o projeto.</p>
+<p>É preciso fazer o fork e clonar o projeto.</p>
 <p>Entrar na pasta: cd clarke_challenge_frontend</p>
 <p>Entrar no terminal do projeto e intalar todas as dependências: yarn </p>
 <p>Para rodar o projeto: npm start </p>
