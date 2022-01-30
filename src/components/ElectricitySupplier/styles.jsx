@@ -1,22 +1,33 @@
-import { Container, ContainerLogo, Content } from "./styles"
-import logo from "../../assets/flask_energia_logo.png"
+import styled from "styled-components";
 
-const ElectricitySupplier = ({provider}) => {
-    return(
-        <Container>
-            <ContainerLogo>
-                <img src={logo}/>
-            </ContainerLogo>
-            <Content>
-            <div className="provider-name">{provider?.name}</div>
-            <div>Estado: {provider?.state} </div>
-            <div>Custo por kWh: R$ {provider?.price_kwh}</div>
-            <div>Limite mínimo de kWh: {provider?.minimum_limit_khw} </div>
-            <div>Clientes: {provider?.number_of_clients}</div>
-            <div>Avaliação média: {provider?.average_rating} </div>
-            </Content>
-        </Container>
-    )
-}
+export const Container = styled.li`
+    width: 300px;
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: row;
+    border: 2px solid black;
+`
+export const ContainerLogo = styled.div`
+    height: 100px;
+    width: 100px;
+    font-size: 25px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    img{
+        height: 50px;
+        width: 80px;
+    }
+`
+export const Content = styled.div`
+    font-size: 14px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
 
-export default ElectricitySupplier
+    .provider-name{
+        font-weight: bold;
+    }
+
+    `
