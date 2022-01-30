@@ -72,6 +72,7 @@ const Register = () => {
                     placeholder="Digite sua senha"
                     register={register}
                     error={errors.password?.message}
+                    type="password"
                 ></Input>
                 <Input
                     name="repeatPassword"
@@ -79,6 +80,7 @@ const Register = () => {
                     placeholder="Digite sua senha"
                     register={register}
                     error={errors.repeatPassword?.message}
+                    type="password"
                 ></Input>
                 <Button type="submit">
                     Cadastrar

@@ -52,6 +52,7 @@ const Login = () => {
                     icon={FiLock}
                     placeholder="Digite sua senha"
                     register={register}
+                    type="password"
                 ></Input>
                 <Button type="submit">
                     Entrar
